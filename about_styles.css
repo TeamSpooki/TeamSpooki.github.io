@@ -1,790 +1,633 @@
-/* Advanced CSS - My Variables */
-:root {
-  --primary-color: rgba(11, 69, 87, 0.103);
-  --overlay-color: rgba(24, 39, 51, 0.85);
-  --menu-speed: 0.75s;
-}
-
-*,
-*::before,
-*::after{
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html{
-  font-family: 'Lato', sans-serif;
-  box-sizing: border-box;
-  /*background-color: #001a28; */
-}
-
-
-p{
-  font-size: 1.6rem;
-}
-
-section{
-  padding: 5rem 0;
-}
-
-header{
-  width: 100%;
-  height: 5rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.container{
-  width: 100%;
-  max-width: 98rem;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-#gameLogo{
-  width: 420px;
-  max-width: 100%;
-  height: auto;
-  padding: 5px;
-  transform: translate(10%, 8%);
-  }
-
-nav{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 0;
-/*   border-bottom: 1px solid rgba(68, 111, 146, 0.075);
- */}
-
-.intro-about{
-  width: 100%;
-  height: 80vh;
-  background: linear-gradient(135deg, rgba(5, 48, 61, 0.747) 0%, rgba(19, 19, 19, 0.8) 100%), url("./img/black-theme-wallpaper.jpg") center no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.intro-about::before{
-content: "";
-position: absolute;
-left: 0;
-bottom: 0px;
-width: 100%;
-height: 12rem;
-background: url("./img/wave-large.png") center no-repeat;
-background-size: cover;
-}
-
-.main-message{
-  width: 100%;
-  max-width: 50rem;
-  color: #fafafa;
-  text-transform: uppercase;
-  transform: translateY(20%);
-}
-
-.main-message{
-  font-size: 1.6rem;
-}
-
-.main-message h1{
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
-  margin: 1rem 0;
-}
-
-.main-message p{
-text-transform: none;
-}
-
-.btn-more{
-  background-color: #022436b6;
-  border-radius: 2rem;
-  color: #fafafa;
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 1rem 2.5rem;
-  text-transform: uppercase;
-  transition: background-color 650ms;
-  text-decoration: none;
-}
-
-.btn-more:hover{
-background-color: #043d5c6e;
-}
-
-
-.insp-section{
-  padding: 0;
-}
-
-.insp-title-section{
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 10rem;
-margin-top: 2rem;
-color: rgba(0, 0, 0, .7);
-}
-
-.insp-title-section h1{
-  font-family: 'Lato', sans-serif;
-  font-size: 2rem;
-  margin: .5rem 0 1rem;
-}
-
-.insp-title-section h3{
-  font-size: 1.4rem;
-  margin: .2rem 0 3rem;
-}
-
-.insp-title-section h4{
-  font-size: 1.5rem;
-  color: rgb(22, 128, 160);
-  text-transform: none;
-  margin: .2rem 0 3rem;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 80vh;
-  transform: translateY(-20%);
-  border-radius: 5px;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide:nth-child(1){
-  background-image: url(./img/img1.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.swiper-slide:nth-child(2){
-  background-image: url(./img/gif2.gif);
-  background-size: cover;
-  background-position: center;
-}
-
-.swiper-slide:nth-child(3){
-  background-image: url(./img/img3.jpg);
-  background-size: cover;
-  background-position: center;
-}
-
-.swiper-slide:nth-child(4){
-  background-image: url(./img/gif4.gif);
-  background-size: cover;
-  background-position: center;
-}
-
-.video-section{
-  padding: 0;
-  background-color: #0a313be8;
-  border-top: 2px solid rgba(116, 160, 189, 0.068);
-  border-bottom: 1px solid rgba(116, 160, 189, 0.068);
-  -moz-box-shadow: inset 0 0 10px #000000;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-  box-shadow: inset 0 0 10px #000000;
-}
-
-.video-title-section{
-text-align: center;
-text-transform: uppercase;
-margin-bottom: 10rem;
-margin-top: 4rem;
-color: rgba(0, 0, 0, .7);
-}
-
-.video-title-section h1{
-  font-family: 'Lato', sans-serif;
-  font-size: 2rem;
-  margin: .5rem 0 1rem;
-  color: #fafafa;
-}
-
-.video-title-section h3{
-  font-size: 1.4rem;
-  color: #997f5a
-}
-
-#video{
-width: 100%;
-height: 100vh;
-transform: translateY(-10%);
-}
-
-.heroes{
-  padding: 0%;
-}
-
-.hero-title-section{
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 10rem;
-  margin-top: 2rem;
-  color: rgba(0, 0, 0, .7);
-}
-
-.hero-title-section h1{
-  font-family: 'Lato', sans-serif;
-  font-size: 2rem;
-  margin: .5rem 0 1rem;
-}
-
-.heroes-grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 2.5rem;
-}
-
-.heroes-grid-item{
-  height: 40rem;
-  padding: 5rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.heroes-grid-item::before{
-  content: "";
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(135deg, rgba(8, 63, 63, 0.925) 0%, rgba(23, 60, 61, 0.8) 100%);
-  z-index: -1;
-}
-
-.hercules-hero{background: url("./img/Hercules.png") center no-repeat;}
-.achilles-hero{background: url("./img/Achille.png") center no-repeat;}
-.hippolyta-hero{background: url("./img/Hippolyta.png") center no-repeat;}
-.theseus-hero{background: url("./img/Theseus.png") center no-repeat;}
-.helen-hero{background: url("./img/Helen.png") center no-repeat;}
-
-.heroes-grid-item h1{
-  font-family: 'Lato', sans-serif;
-  font-size: 1.7rem;
-  text-transform: uppercase;
-  margin: 2rem 0;
-  color: #fafafa;
-}
-
-.heroes-grid-item p{
-  color: #fafafa;
-  opacity: 0.3;
-  text-transform: none;
-}
-
-.heroes-grid-item p:hover{
-  color: #fafafa;
-  opacity: 1;
-}
-
-.expectations{
-  width: 100%;
-  height: 90vh;
-  background: linear-gradient(135deg, rgba(5, 48, 61, 0.747) 0%, rgba(19, 19, 19, 0.8) 100%), url("./img/black-theme-wallpaper.jpg") center no-repeat fixed;
-  background-size: cover;
-  position: relative;
-}
-
-.expectations::before{
-content: "";
-position: absolute;
-top: 0px;
-left: 0;
-width: 100%;
-height: 12rem;
-background: url("./img/wave-large-reversed.png") center no-repeat;
-background-size: cover;
-}
-
-.expectation-title{
-  width: 100%;
-  color: #fafafa;
-  position: absolute;
-  top: 57%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.expectation-title h1{
-  font-family: 'Lato', sans-serif;
-  font-size: 1.7rem;
-  text-transform: uppercase;
-  margin: 2rem 0;
-  color: #fafafa;
-}
-
-.expectation-title p{
-  color: #fafafa;
-  margin: .5rem 0 2rem;
-  text-transform: none;
-}
-
-.expectation-content span{
-  font-size: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  border-top: 1px solid rgba(116, 160, 189, 0.034);
-  border-bottom: 1px solid rgba(116, 160, 189, 0.034);
-  -moz-box-shadow: inset 0 0 10px #00000049;
-  -webkit-box-shadow: inset 0 0 10px #00000031;
-  box-shadow: inset 0 0 10px #00000052;
-}
-/******************** Main Nav-Menu **************************/
-
-#nav-wrapper {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  z-index: 1;
-}
-
-#nav-wrapper .toggler {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-}
-
-/* Nav menu background position etc. */
-#nav-wrapper .hamburger {
-  position: absolute;
-  display: flex;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-  width: 60px;
-  height: 50px;
-  padding: 1rem;
-  background: var(--primary-color);
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-  border-radius: 2px;
-  border: none;
-}
-
-/* Hamburger First Line - Pushed into empty div tag */
-#nav-wrapper .hamburger > div {
-  position: relative;
-  flex: none;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-}
-
-/* Hamburger First Line - Pushed into empty div tag*/
-#nav-wrapper .hamburger > div {
-  position: relative;
-  flex: none;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-}
-
-/* Hamburger Lines - Top & Bottom  (Creates one line before and another after the first line - Initially first and second lines)*/
-#nav-wrapper .hamburger > div::before,
-#nav-wrapper .hamburger > div::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: -10px;
-  width: 100%;
-  height: 2px;
-  background: inherit;
-}
-
-/* Moves Line Down - Creates final line after the first two lines above*/
-#nav-wrapper .hamburger > div::after {
-  top: 10px;
-}
-
-/* Toggler Animation */
-#nav-wrapper .toggler:checked + .hamburger > div {
-  transform: rotate(135deg);
-}
-
-/* Hover/shaker effect on Hamburger menu button*/
-.menu-wrap .hamburger:hover {
-  transform: rotate(2deg);
-}
-
-/* Turns Lines Into X */
-#nav-wrapper .toggler:checked + .hamburger > div:before,
-#nav-wrapper .toggler:checked + .hamburger > div:after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-/* Rotate On Hover When Checked */
-#nav-wrapper .toggler:checked:hover + .hamburger > div {
-  transform: rotate(225deg);
-}
-
-/* Show Menu when the hamburger is checked on/active */
-#nav-wrapper .toggler:checked ~ .menu {
-  visibility: visible;
-}
-
-/* Passing it through the empty div, so when the hamburger nav is clicked on it will scale accordingly */
-#nav-wrapper .toggler:checked ~ .menu > div {
-  transform: scale(1);
-  transition-duration: var(--menu-speed);
-}
-
-/*Set Opacity of menu*/
-#nav-wrapper .toggler:checked ~ .menu > div > div {
-  opacity: 1;
-  transition: opacity 0.4s ease 0.4s;
-}
-
-/* New state of Menu */
-#nav-wrapper .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/*Set background transition colour to appear when opening Menu*/
-#nav-wrapper .menu > div {
-  background: var(--overlay-color);
-  border-radius: 50%;
-  width: 200vw;
-  height: 200vw;
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  transform: scale(0);
-  transition: all 0.4s ease;
-}
-
-#nav-wrapper .menu > div > div {
-  text-align: center;
-  max-width: 90vw;
-  max-height: 100vh;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-/*Effect of Menu title Contents*/
-#nav-wrapper .menu > div > div > ul > li {
-  list-style: none;
-  color: #fff;
-  font-size: 2rem;
-  padding: 1.4rem;
-}
-
-/*Effect of Menu title links (underline removed etc.)*/
-#nav-wrapper .menu > div > div > ul > li > a {
-  color: inherit;
-  text-decoration: none;
-  transition: color 0.4s ease;
-}
-
-/* Media Queries */
-@media screen and (max-width: 375px){
-  .intro-about{
-    width: 500px;
-    height: 80vh;
-  }
-}
-
-@media screen and (max-width: 414px){
-  .intro-about{
-    width: 500px;
-    height: 800px;
-  }
-  .insp-section{
-    width: 500px;
-  }
-  .video-section{
-    width: 500px;
-  }
-  .heroes{
-    width: 500px;
-  }
-  .expectations{
-    width: 500px;
-    height: 880px;
-  }
-
-}
-
-@media screen and (min-width: 950px){
-  .expectations{
-
-    height: 45rem;
-
-
+    /* Advanced CSS - My Variables */
+    :root {
+      --primary-color: rgba(11, 69, 87, 0.103);
+      --overlay-color: rgba(24, 39, 51, 0.85);
+      --menu-speed: 0.75s;
     }
-}
-@media screen and (min-width: 950px){
-.intro-about{
 
-    height: 40rem;
-
-
+    *,
+    *::before,
+    *::after{
+      margin: 0;
+      padding: 0;
+      box-sizing: inherit;
     }
-}
-@media (max-width: 950px){
-  .expectations{
 
-    height: 45rem;
-
-
+    html{
+      font-family: 'Lato', sans-serif;
+      box-sizing: border-box;
+      /*background-color: #001a28; */
     }
-}
-
-@media (max-width: 950px){
-.intro-about{
-
-    height: 40rem;
 
 
+    p{
+      font-size: 1.6rem;
     }
-}
-@media (max-width: 700px){
-  .expectations{
 
-    height: 50rem;
-
-
+    section{
+      padding: 5rem 0;
     }
-}
 
-@media (max-width: 700px){
-.intro-about{
-
-    height: 45rem;
-
-
+    header{
+      width: 100%;
+      height: 5rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
     }
-}
-@media (max-width: 800px){
-  .expectations{
 
-    height: 55rem;
-
-
+    .container{
+      width: 100%;
+      max-width: 98rem;
+      margin: 0 auto;
+      padding: 0 1.5rem;
     }
-}
 
-@media (max-width: 800px){
-.intro-about{
+    #gameLogo{
+      width: 420px;
+      max-width: 100%;
+      height: auto;
+      padding: 5px;
+      transform: translate(10%, 8%);
+      }
 
-    height: 50rem;
+    nav{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+    /*   border-bottom: 1px solid rgba(68, 111, 146, 0.075);
+    */}
 
-
+    .intro-about{
+      width: 100%;
+      height: 80vh;
+      background: linear-gradient(135deg, rgba(5, 48, 61, 0.747) 0%, rgba(19, 19, 19, 0.8) 100%), url("./img/black-theme-wallpaper.jpg") center no-repeat;
+      background-size: cover;
+      position: relative;
     }
-}
-/*@media (max-width:650px){
-  .expectations{
 
-    height: 65rem;
-
-
-    }
-}
-@media (max-width:650px){
-.intro-about{
-
-    height: 60rem;
-
-
-    }
-}
-@media (max-width:870px){
-  .expectations{
-
-    height: 75rem;
-
-
-    }
-}
-@media (max-width:950px){
-.intro-about{
-
-    height: 70rem;
-
-
-    }
-}
-/*
-@media (max-width:470px){
-  .expectations{
-
-    height: 65rem;
-
-
-    }
-}
-@media (max-width:470px){
-.intro-about{
-
-    height: 60rem;
-
-
-    }
-}
-/*
-@media screen and (min-width: 950px){
-  .expectations{
-
-    height: 45rem;
-
-
-    }
-}
-@media screen and (min-width: 950px){
-.intro-about{
-
-    height: 40rem;
-
-
-    }
-}
-@media screen and (min-width: 700px){
-  .expectations{
-
-    height: 55rem;
-
-
-    }
-}
-@media screen and (min-width: 700px){
-.intro-about{
-
-    height: 50rem;
-
-
-    }
-}
-@media screen and (min-width: 470px){
-  .expectations{
-
-    height: 65rem;
-
-
-    }
-}
-@media screen and (min-width: 470px){
-.intro-about{
-
-    height: 60rem;
-
-
-    }
-}
-
-
-
- @media screen and (min-width: 350px){
-  .main-message{
-    transform: translateY(40%);
-  }
-}
-
-@media screen and (min-width: 470px){
-  .intro-about::before{
-    height: 9.4rem;
-    background: url("./img/wave-medium.png");
-    background-size: cover;
-  }
-
-  .expectations::before{
-    height: 9.4rem;
-    background: url("./img/wave-medium-reversed.png") center no-repeat;
+    .intro-about::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 12rem;
+    background: url("./img/wave-large.png") center no-repeat;
     background-size: cover;
     }
-}
 
-@media screen and (min-width: 700px){
-  header{
-    height: 8rem;
-  }
-
-  .intro-about{
-    height: 60vh;
-  }
-
-  .main-message{
-    transform: translateY(70%);
-  }
-
-  .insp-title-section h1{
-    font-size: 2.5rem;
-  }
-}
-
-@media screen and (min-width: 950px){
-  .intro-about::before{
-    height: 22.7rem;
-    background: url("./img/wave-large.png");
-    background-size: cover;
-  }
-
-  .expectations::before{
-    height: 22.7rem;
-    background: url("./img/wave-large-reversed.png") center no-repeat;
-    background-size: cover;
+    .main-message{
+      width: 100%;
+      max-width: 50rem;
+      color: #fafafa;
+      text-transform: uppercase;
+      transform: translateY(20%);
     }
-}
+
+    .main-message{
+      font-size: 1.6rem;
+    }
+
+    .main-message h1{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3.5rem;
+      margin: 1rem 0;
+    }
+
+    .main-message p{
+    text-transform: none;
+    }
+
+    .btn-more{
+      background-color: #022436b6;
+      border-radius: 2rem;
+      color: #fafafa;
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2.5rem;
+      text-transform: uppercase;
+      transition: background-color 650ms;
+      text-decoration: none;
+    }
+
+    .btn-more:hover{
+    background-color: #043d5c6e;
+    }
 
 
-@media screen and (min-width: 1200px){
-  .intro-about{
-    height: 75vh;
-  }
-}
-*/
+    .insp-section{
+      padding: 0;
+    }
+
+    .insp-title-section{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    margin-top: 2rem;
+    color: rgba(0, 0, 0, .7);
+    }
+
+    .insp-title-section h1{
+      font-family: 'Lato', sans-serif;
+      font-size: 2rem;
+      margin: .5rem 0 1rem;
+    }
+
+    .insp-title-section h3{
+      font-size: 1.4rem;
+      margin: .2rem 0 3rem;
+    }
+
+    .insp-title-section h4{
+      font-size: 1.5rem;
+      color: rgb(22, 128, 160);
+      text-transform: none;
+      margin: .2rem 0 3rem;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 80vh;
+      transform: translateY(-20%);
+      border-radius: 5px;
+      z-index: 0;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide:nth-child(1){
+      background-image: url(./img/img1.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .swiper-slide:nth-child(2){
+      background-image: url(./img/gif2.gif);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .swiper-slide:nth-child(3){
+      background-image: url(./img/img3.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .swiper-slide:nth-child(4){
+      background-image: url(./img/gif4.gif);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .video-section{
+      padding: 0;
+      background-color: #0a313be8;
+      border-top: 2px solid rgba(116, 160, 189, 0.068);
+      border-bottom: 1px solid rgba(116, 160, 189, 0.068);
+      -moz-box-shadow: inset 0 0 10px #000000;
+      -webkit-box-shadow: inset 0 0 10px #000000;
+      box-shadow: inset 0 0 10px #000000;
+    }
+
+    .video-title-section{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10rem;
+    margin-top: 4rem;
+    color: rgba(0, 0, 0, .7);
+    }
+
+    .video-title-section h1{
+      font-family: 'Lato', sans-serif;
+      font-size: 2rem;
+      margin: .5rem 0 1rem;
+      color: #fafafa;
+    }
+
+    .video-title-section h3{
+      font-size: 1.4rem;
+      color: #997f5a
+    }
+
+    #video{
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-10%);
+    }
+
+    .heroes{
+      padding: 0%;
+    }
+
+    .hero-title-section{
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 10rem;
+      margin-top: 2rem;
+      color: rgba(0, 0, 0, .7);
+    }
+
+    .hero-title-section h1{
+      font-family: 'Lato', sans-serif;
+      font-size: 2rem;
+      margin: .5rem 0 1rem;
+      transform: translateY(6vh);
+    }
+
+    .heroes-grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-gap: 2.5rem;
+    }
+
+    .heroes-grid-item{
+      height: 40rem;
+      padding: 5rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 0;
+    }
+
+    .heroes-grid-item::before{
+      content: "";
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(135deg, rgba(8, 63, 63, 0.925) 0%, rgba(23, 60, 61, 0.8) 100%);
+      z-index: -1;
+    }
+
+    .hercules-hero{background: url("./img/Hercules.png") center no-repeat;}
+    .achilles-hero{background: url("./img/Achille.png") center no-repeat;}
+    .hippolyta-hero{background: url("./img/Hippolyta.png") center no-repeat;}
+    .theseus-hero{background: url("./img/Theseus.png") center no-repeat;}
+    .helen-hero{background: url("./img/Helen.png") center no-repeat;}
+
+    .heroes-grid-item h1{
+      font-family: 'Lato', sans-serif;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      margin: 2rem 0;
+      color: #fafafa;
+    }
+
+    .heroes-grid-item p{
+      color: #fafafa;
+      opacity: 0.3;
+      text-transform: none;
+    }
+
+    .heroes-grid-item p:hover{
+      color: #fafafa;
+      opacity: 1;
+    }
+
+    .expectations{
+      width: 100%;
+      height: 90vh;
+      background: linear-gradient(135deg, rgba(5, 48, 61, 0.747) 0%, rgba(19, 19, 19, 0.8) 100%), url("./img/black-theme-wallpaper.jpg") center no-repeat fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    .expectations::before{
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 12rem;
+      background: url("./img/wave-large-reversed.png") center no-repeat;
+      background-size: cover;
+    }
+
+    .expectation-title{
+      width: 100%;
+      color: #fafafa;
+      position: absolute;
+      top: 57%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .expectation-title h1{
+      font-family: 'Lato', sans-serif;
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      margin: 2rem 0;
+      color: #fafafa;
+    }
+
+    .expectation-title p{
+      color: #fafafa;
+      margin: .5rem 0 2rem;
+      text-transform: none;
+    }
+
+    .expectation-content span{
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      border-top: 1px solid rgba(116, 160, 189, 0.034);
+      border-bottom: 1px solid rgba(116, 160, 189, 0.034);
+      -moz-box-shadow: inset 0 0 10px #00000049;
+      -webkit-box-shadow: inset 0 0 10px #00000031;
+      box-shadow: inset 0 0 10px #00000052;
+    }
+    /******************** Main Nav-Menu **************************/
+
+    #nav-wrapper {
+      position: fixed;
+      top: 5px;
+      left: 5px;
+      z-index: 1;
+    }
+
+    #nav-wrapper .toggler {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+    }
+
+    /* Nav menu background position etc. */
+    #nav-wrapper .hamburger {
+      position: absolute;
+      display: flex;
+      top: 0px;
+      left: 0px;
+      z-index: 1;
+      width: 60px;
+      height: 50px;
+      padding: 1rem;
+      background: var(--primary-color);
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+      border-radius: 2px;
+      border: none;
+    }
+
+    /* Hamburger First Line - Pushed into empty div tag */
+    #nav-wrapper .hamburger > div {
+      position: relative;
+      flex: none;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+    }
+
+    /* Hamburger First Line - Pushed into empty div tag*/
+    #nav-wrapper .hamburger > div {
+      position: relative;
+      flex: none;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+    }
+
+    /* Hamburger Lines - Top & Bottom  (Creates one line before and another after the first line - Initially first and second lines)*/
+    #nav-wrapper .hamburger > div::before,
+    #nav-wrapper .hamburger > div::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: -10px;
+      width: 100%;
+      height: 2px;
+      background: inherit;
+    }
+
+    /* Moves Line Down - Creates final line after the first two lines above*/
+    #nav-wrapper .hamburger > div::after {
+      top: 10px;
+    }
+
+    /* Toggler Animation */
+    #nav-wrapper .toggler:checked + .hamburger > div {
+      transform: rotate(135deg);
+    }
+
+    /* Hover/shaker effect on Hamburger menu button*/
+    .menu-wrap .hamburger:hover {
+      transform: rotate(2deg);
+    }
+
+    /* Turns Lines Into X */
+    #nav-wrapper .toggler:checked + .hamburger > div:before,
+    #nav-wrapper .toggler:checked + .hamburger > div:after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+
+    /* Rotate On Hover When Checked */
+    #nav-wrapper .toggler:checked:hover + .hamburger > div {
+      transform: rotate(225deg);
+    }
+
+    /* Show Menu when the hamburger is checked on/active */
+    #nav-wrapper .toggler:checked ~ .menu {
+      visibility: visible;
+    }
+
+    /* Passing it through the empty div, so when the hamburger nav is clicked on it will scale accordingly */
+    #nav-wrapper .toggler:checked ~ .menu > div {
+      transform: scale(1);
+      transition-duration: var(--menu-speed);
+    }
+
+    /*Set Opacity of menu*/
+    #nav-wrapper .toggler:checked ~ .menu > div > div {
+      opacity: 1;
+      transition: opacity 0.4s ease 0.4s;
+    }
+
+    /* New state of Menu */
+    #nav-wrapper .menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /*Set background transition colour to appear when opening Menu*/
+    #nav-wrapper .menu > div {
+      background: var(--overlay-color);
+      border-radius: 50%;
+      width: 200vw;
+      height: 200vw;
+      display: flex;
+      flex: none;
+      align-items: center;
+      justify-content: center;
+      transform: scale(0);
+      transition: all 0.4s ease;
+    }
+
+    #nav-wrapper .menu > div > div {
+      text-align: center;
+      max-width: 90vw;
+      max-height: 100vh;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+
+    /*Effect of Menu title Contents*/
+    #nav-wrapper .menu > div > div > ul > li {
+      list-style: none;
+      color: #fff;
+      font-size: 2rem;
+      padding: 1.4rem;
+      z-index: 0;
+    }
+
+    /*Effect of Menu title links (underline removed etc.)*/
+    #nav-wrapper .menu > div > div > ul > li > a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.4s ease;
+    }
+
+    /* Media Queries */
+    @media screen and (max-width: 375px){
+      .intro-about{
+        width: 500px;
+        height: 80vh;
+      }
+    }
+
+    @media screen and (max-width: 414px){
+      .intro-about{
+        width: 500px;
+        height: 800px;
+      }
+      .insp-section{
+        width: 500px;
+      }
+      .video-section{
+        width: 500px;
+      }
+      .heroes{
+        width: 500px;
+      }
+      .expectations{
+        width: 500px;
+        height: 880px;
+      }
+
+    }
+
+    @media screen and (min-width: 950px){
+      .expectations{
+
+        height: 45rem;
+
+
+        }
+    }
+    @media screen and (min-width: 950px){
+    .intro-about{
+
+        height: 40rem;
+
+
+        }
+    }
+    @media (max-width: 950px){
+      .expectations{
+
+        height: 45rem;
+
+
+        }
+    }
+
+    @media (max-width: 950px){
+    .intro-about{
+
+        height: 40rem;
+
+
+        }
+    }
+    @media (max-width: 700px){
+      .expectations{
+
+        height: 50rem;
+
+
+        }
+    }
+
+    @media (max-width: 700px){
+    .intro-about{
+
+        height: 45rem;
+
+
+        }
+    }
+    @media (max-width: 800px){
+      .expectations{
+
+        height: 55rem;
+
+
+        }
+    }
+
+    @media (max-width: 800px){
+    .intro-about{
+
+        height: 50rem;
+
+
+        }
+    }
